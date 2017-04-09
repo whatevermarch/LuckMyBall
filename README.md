@@ -1,9 +1,9 @@
 # LuckMyBall
 ### Controls
-Walk : W-A-S-D
-Jump : Spacebar
-Shoot Bullets : Left Mouse Button
-Throw TNT : Right Mouse Button
+- Walk : W-A-S-D  
+- Jump : Spacebar  
+- Shoot Bullets : Left Mouse Button  
+- Throw TNT : Right Mouse Button  
 
 ### How to play
 Scene1
@@ -17,8 +17,8 @@ Scene2
 3. The door will disapear
 4. end game
 
-Notice : the capsule model is the key.
-You can.
-Collect Ammo:
-Collect Grenard:
-When you died you rebirth at check point.
+Notice : the capsule model is the key  
+You can  
+- Collect Ammo  
+- Collect Grenard  
+- When you died, rebirth at checkpoint
