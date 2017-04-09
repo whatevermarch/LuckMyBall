@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
     public void Respawn()
     {
         Player.transform.position = checkPoint;
+		Rigidbody rb = Player.GetComponent<Rigidbody> ();
+		rb.velocity = Vector3.zero;
     }
 
     void Awake()

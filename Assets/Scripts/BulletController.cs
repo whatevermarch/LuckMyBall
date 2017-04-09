@@ -17,6 +17,7 @@ public class BulletController : MonoBehaviour {
 		rb = GetComponent<Rigidbody> ();
 		lifeTime = shotYield / speed;
 		rb.velocity = transform.forward * speed;
+		//Debug.Log ("hey");
 	}
 	
 	// Update is called once per frame
@@ -34,6 +35,7 @@ public class BulletController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col){
 		if (col.tag != "Player") {
+			//Debug.Log ("hi");
 			if (col.tag == "Enemy" || col.tag == "Trap")
 				Destroy (col.gameObject);
 			Destroy (this.gameObject);

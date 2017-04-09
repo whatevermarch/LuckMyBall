@@ -64,10 +64,16 @@ public class PlayerController : MonoBehaviour {
 		}*/
 
 		//Debug.Log (rb.velocity.y);
-		//if (rb.velocity.y <= -4.7f) {
-			//Debug.Log ("Dead");
-			//UnityEditor.EditorApplication.Exit(0);
-		//}
+
+		if (rb.velocity.y <= -30f) {
+			GameManager.instance.life -= 1;
+			GameManager.instance.Respawn(); 
+			if(GameManager.instance.life <= 0){
+				//Debug.Log ("yes");
+				GameManager.instance.isEnd = true;
+				SceneManager.LoadScene ("End Game");
+			}
+		}
 	}
 
 	void Move(float h, float v){
