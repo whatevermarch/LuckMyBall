@@ -1,0 +1,48 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+[Vulkan init] extensions: count=4
+[Vulkan init] extensions: name=VK_KHR_surface, enabled=1
+[Vulkan init] extensions: name=VK_KHR_win32_surface, enabled=1
+[Vulkan init] extensions: name=VK_EXT_debug_report, enabled=0
+[Vulkan init] extensions: name=VK_NV_external_memory_capabilities, enabled=0
+[Vulkan init] extensions: count=8
+[Vulkan init] extensions: name=VK_KHR_swapchain, enabled=1
+[Vulkan init] extensions: name=VK_NV_glsl_shader, enabled=0
+[Vulkan init] extensions: name=VK_KHR_sampler_mirror_clamp_to_edge, enabled=0
+[Vulkan init] extensions: name=VK_NV_dedicated_allocation, enabled=0
+[Vulkan init] extensions: name=VK_NV_external_memory, enabled=0
+[Vulkan init] extensions: name=VK_NV_external_memory_win32, enabled=0
+[Vulkan init] extensions: name=VK_NV_win32_keyed_mutex, enabled=0
+[Vulkan init] extensions: name=VK_NVX_device_generated_commands, enabled=0
+Vulkan API version 1.0.24
+Vulkan vendor=[NVIDIA] id=[10de]
+Vulkan renderer=[GT 750M] id=[fe4]
+Vulkan device type 2
+Vulkan driverversion=[0x5e0d8000] uint=[1577943040]
+Vulkan: default RenderTexture HDR format: 11 (109)
+Vulkan PSO: cache data not found [path=C:/Users/MARCHA~1/AppData/Local/Temp/DefaultCompany/Midterm/vulkan_pso_cache.bin]
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Libraries\Documents\Unity Projects\Midterm\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Libraries\Documents\Unity Projects\Midterm\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Libraries\Documents\Unity Projects\Midterm\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Libraries\Documents\Unity Projects\Midterm\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Libraries\Documents\Unity Projects\Midterm\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Libraries\Documents\Unity Projects\Midterm\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Libraries\Documents\Unity Projects\Midterm\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Libraries\Documents\Unity Projects\Midterm\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.020 seconds
+Platform assembly: D:\Libraries\Documents\Unity Projects\Midterm\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Libraries\Documents\Unity Projects\Midterm\test_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+InitializeOrResetSwapChain 1280x720 samples=1
+Using present mode 1
+<RI> Initialized touch support.
+UnloadTime: 32.086807 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 25b0 -> priority: 1 
+  Thread -> id: 2f44 -> priority: 1 
+  Thread -> id: 1370 -> priority: 1 
+  Thread -> id: 2448 -> priority: 1 
+Vulkan PSO: data extracted [first call size=45325, new size=45325, old size=0, incomplete=0]
+Vulkan PSO: Saved size[45325] path[C:/Users/MARCHA~1/AppData/Local/Temp/DefaultCompany/Midterm/vulkan_pso_cache.bin] success=1 headerChanged=1 sizeChanged=1
