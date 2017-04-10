@@ -67,12 +67,12 @@ public class PlayerController : MonoBehaviour {
 
 		if (rb.velocity.y <= -30f) {
 			GameManager.instance.life -= 1;
-			GameManager.instance.Respawn(); 
-			if(GameManager.instance.life <= 0){
-				//Debug.Log ("yes");
+			if (GameManager.instance.life <= 0) {
 				GameManager.instance.isEnd = true;
-				SceneManager.LoadScene ("End Game");
+			} else {
+				GameManager.instance.health = GameManager.instance.maxHealth;
 			}
+			GameManager.instance.Respawn ();
 		}
 	}
 

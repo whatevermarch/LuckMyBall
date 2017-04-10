@@ -34,8 +34,18 @@ public class BlastController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col){
 		if (col.tag != "Enemy") {
-			if (col.tag == "Player")
-				Destroy (col.gameObject);
+			if (col.tag == "Player") {
+				GameManager.instance.health -= 10;
+				if (GameManager.instance.health <= 0) {
+					GameManager.instance.life -= 1;
+					if (GameManager.instance.life <= 0) {
+						GameManager.instance.isEnd = true;
+					} else {
+						GameManager.instance.health = GameManager.instance.maxHealth;
+					}
+					GameManager.instance.Respawn ();
+				}
+			}
 			Destroy (this.gameObject);
 		}
 	}

@@ -36,12 +36,13 @@ public class EnemyController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if(other.tag == "Player"){
-			//Destroy(other.gameObject);
 			GameManager.instance.life -= 1;
-			GameManager.instance.Respawn(); 
-			if(GameManager.instance.life <= 0){
-			    GameManager.instance.isEnd = true;
+			if (GameManager.instance.life <= 0) {
+				GameManager.instance.isEnd = true;
+			} else {
+				GameManager.instance.health = GameManager.instance.maxHealth;
 			}
+			GameManager.instance.Respawn ();
 		}
 
 	}

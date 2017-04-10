@@ -68,11 +68,9 @@ public class GameManager : MonoBehaviour
     {
         if (Player)
         {
-            if (isGameover)
-            {
-                Respawn();
-                isGameover = false;
-            }
+			if (isEnd) {
+				SceneManager.LoadScene ("End Game");
+			}
         }
     }
 }
