@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 	public GameObject shot;
 	public float fireInterval = 0.2f;
 	public GameObject grenade;
+	public float fallVelocity = -15f;
 
 	private Rigidbody rb;
 
@@ -65,7 +66,7 @@ public class PlayerController : MonoBehaviour {
 
 		//Debug.Log (rb.velocity.y);
 
-		if (rb.velocity.y <= -30f) {
+		if (rb.velocity.y <= fallVelocity) {
 			GameManager.instance.life -= 1;
 			if (GameManager.instance.life <= 0) {
 				GameManager.instance.isEnd = true;
