@@ -17,6 +17,11 @@ public class GameManager : MonoBehaviour
     public int life;
     public int bullet;
     public int bomb;
+
+	int lastHealth;
+	int lastBullet;
+	int lastBomb;
+
     [HideInInspector]
     public string minutes = "Hello";
     [HideInInspector]
@@ -37,6 +42,9 @@ public class GameManager : MonoBehaviour
     public void Respawn()
     {
         Player.transform.position = checkPoint;
+		health = lastHealth;
+		bullet = lastBullet;
+		bomb = lastBomb;
 		Rigidbody rb = Player.GetComponent<Rigidbody> ();
 		rb.velocity = Vector3.zero;
     }
@@ -53,6 +61,9 @@ public class GameManager : MonoBehaviour
         if (Player)
         {
 			checkPoint = startPoint.position;
+			lastHealth = health;
+			lastBullet = bullet;
+			lastBomb = bomb;
 			Player.transform.position = startPoint.position;
             maxItem.Add("Bomb", maxBomb);
             maxItem.Add("Health", maxHealth);
@@ -73,4 +84,10 @@ public class GameManager : MonoBehaviour
 			}
         }
     }
+
+	public void setLastAttrib(int hp, int bullet, int bomb){
+		lastHealth = hp;
+		lastBullet = bullet;
+		lastBomb = bomb;
+	}
 }

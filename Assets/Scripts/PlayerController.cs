@@ -99,6 +99,12 @@ public class PlayerController : MonoBehaviour {
 		{
 			Debug.Log("Checkpoint: " + other.gameObject.name);
 			GameManager.instance.checkPoint = other.gameObject.transform.position;
+			GameManager.instance.setLastAttrib (
+				GameManager.instance.health,
+				GameManager.instance.bullet,
+				GameManager.instance.bomb
+			);
+			Destroy (other.gameObject);
 		}
 		else if (other.tag == "Key")
 		{
