@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
     public int bullet;
     public int bomb;
 
+	int startHP;
+	int startLife;
+	int startBul;
+	int startBomb;
 	int lastHealth;
 	int lastBullet;
 	int lastBomb;
@@ -60,6 +64,10 @@ public class GameManager : MonoBehaviour
         }
         if (Player)
         {
+			startHP = health;
+			startLife = life;
+			startBul = bullet;
+			startBomb = bomb;
 			checkPoint = startPoint.position;
 			lastHealth = health;
 			lastBullet = bullet;
@@ -81,6 +89,15 @@ public class GameManager : MonoBehaviour
         {
 			if (isEnd) {
 				SceneManager.LoadScene ("End Game");
+				health = startHP;
+				life = startLife;
+				bullet = startBul;
+				bomb = startBomb;
+				isEnd = false;
+				checkPoint = startPoint.position;
+				lastHealth = health;
+				lastBullet = bullet;
+				lastBomb = bomb;
 			}
         }
     }
